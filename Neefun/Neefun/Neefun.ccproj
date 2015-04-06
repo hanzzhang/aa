@@ -36,6 +36,22 @@
     <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NeefunWeb\NeefunWeb.csproj">
+      <Name>NeefunWeb</Name>
+      <Project>{21165456-7b03-4b53-ab55-9cf6fe1b8388}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>NeefunWeb</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NeefunWebContent\" />
+  </ItemGroup>
+  <ItemGroup>
+    <DiagnosticsConfiguration Include="NeefunWebContent\diagnostics.wadcfgx" />
+  </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
