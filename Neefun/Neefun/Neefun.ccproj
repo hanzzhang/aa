@@ -37,6 +37,14 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NeefunApi\NeefunApi.csproj">
+      <Name>NeefunApi</Name>
+      <Project>{9f1f62a3-c1ea-49a4-8ca8-9d1fc164c7cd}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>NeefunApi</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
     <ProjectReference Include="..\NeefunWeb\NeefunWeb.csproj">
       <Name>NeefunWeb</Name>
       <Project>{21165456-7b03-4b53-ab55-9cf6fe1b8388}</Project>
@@ -47,10 +55,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="NeefunApiContent\" />
     <Folder Include="NeefunWebContent\" />
     <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
+    <DiagnosticsConfiguration Include="NeefunApiContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="NeefunWebContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <ItemGroup>

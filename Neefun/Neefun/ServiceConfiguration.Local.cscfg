@@ -4,4 +4,8 @@
     <Instances count="1" />
     <ConfigurationSettings />
   </Role>
+  <Role name="NeefunApi">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
 </ServiceConfiguration>
