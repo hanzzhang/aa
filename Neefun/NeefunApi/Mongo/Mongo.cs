@@ -12,7 +12,7 @@ namespace NeefunApi
 {
     public static class Mongo
     {
-        private static string connectionString = "mongodb://hanzvm2.cloudapp.net";
+        private static string connectionString = "mongodb://hanzvm2cloudservice.cloudapp.net";
         private static string dbName = "Person";
         private static string collectionName = "PersonCollection";
         private static IMongoDatabase db = null;
@@ -30,7 +30,7 @@ namespace NeefunApi
         public static async Task<List<Person>> GetPersonAsync(System.Web.OData.Query.ODataQueryOptions<Person> queryOptions)
         {
             IMongoCollection<Person> collection = db.GetCollection<Person>(collectionName);
-            return await collection.Find<Person>(x => x.Name =="hanz").ToListAsync();
+            return await collection.Find<Person>(x => x.Name != null).ToListAsync();
         }
 
         // Creates a Person and inserts it into the collection in MongoDB.

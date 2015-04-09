@@ -30,12 +30,12 @@ namespace NeefunApi
             );
 
 
-            ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
-            builder.EntitySet<Person>("Person");
-            config.MapODataServiceRoute(
-                routeName: "ODataRoute",
-                routePrefix: null,
-                model: builder.GetEdmModel());
+            //ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+            //builder.EntitySet<Person>("Person");
+            //config.MapODataServiceRoute(
+            //    routeName: "ODataRoute",
+            //    routePrefix: null,
+            //    model: builder.GetEdmModel());
         }
     }
 }

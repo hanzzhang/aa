@@ -23,37 +23,36 @@ namespace NeefunApi.Controllers
         // GET: odata/Person
         public async Task<IHttpActionResult> GetPerson(ODataQueryOptions<Person> queryOptions)
         {
-            // validate the query.
+            IEnumerable<Person> people = null;
             try
             {
                 queryOptions.Validate(_validationSettings);
-                await Mongo.GetPersonAsync(queryOptions);
+                people = await Mongo.GetPersonAsync(queryOptions);
             }
-            catch (ODataException ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
 
-            // return Ok<IEnumerable<Person>>(people);
-            return StatusCode(HttpStatusCode.NotImplemented);
+            return Ok<IEnumerable<Person>>(people);
         }
 
         // GET: odata/Person(5)
         public async Task<IHttpActionResult> GetPerson([FromODataUri] System.Guid key, ODataQueryOptions<Person> queryOptions)
         {
-            // validate the query.
+            Person person = null;
             try
             {
                 queryOptions.Validate(_validationSettings);
-                await Mongo.GetPersonAsync(queryOptions);
+                var col = await Mongo.GetPersonAsync(queryOptions);
+                person = col.FirstOrDefault<Person>(); 
             }
-            catch (ODataException ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
 
-            // return Ok<Person>(person);
-            return StatusCode(HttpStatusCode.NotImplemented);
+            return Ok<Person>(person);
         }
 
         // PUT: odata/Person(5)
@@ -89,10 +88,12 @@ namespace NeefunApi.Controllers
 
             // TODO: Add create logic here.
             var p = new Person();
+            p.Name = "peng";
+            p.CreatedDate = DateTimeOffset.Now;
+            p.Id = Guid.NewGuid();
             await Mongo.CreatePersonAsync(p);
 
-            // return Created(person);
-            return StatusCode(HttpStatusCode.NotImplemented);
+            return Created(person);
         }
 
         // PATCH: odata/Person(5)
@@ -111,22 +112,19 @@ namespace NeefunApi.Controllers
             // delta.Patch(person);
 
             // TODO: Save the patched entity.
-            var p = new Person();
+            var person = new Person();
             await Mongo.CreatePersonAsync(p);
 
-            // return Updated(person);
-            return StatusCode(HttpStatusCode.NotImplemented);
+            return Updated(person);
         }
 
         // DELETE: odata/Person(5)
         public async Task<IHttpActionResult> Delete([FromODataUri] System.Guid key)
         {
-            // TODO: Add delete logic here.
             var p = new Person();
             await Mongo.CreatePersonAsync(p);
 
-            // return StatusCode(HttpStatusCode.NoContent);
-            return StatusCode(HttpStatusCode.NotImplemented);
+            return StatusCode(HttpStatusCode.NoContent);
         }
     }
 }

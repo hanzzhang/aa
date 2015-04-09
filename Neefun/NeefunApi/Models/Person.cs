@@ -17,7 +17,7 @@ namespace NeefunApi.Models
         public string Name { get; set; }
 
         [BsonElement("CreatedDate")]
-        public DateTime CreatedDate { get; set; }
+        public DateTimeOffset CreatedDate { get; set; }
 
     }
 }
