@@ -39,7 +39,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NeefunApi\NeefunApi.csproj">
       <Name>NeefunApi</Name>
-      <Project>{9f1f62a3-c1ea-49a4-8ca8-9d1fc164c7cd}</Project>
+      <Project>{a2c3e72d-1809-4b93-9056-aa6b47e42b17}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>NeefunApi</RoleName>
