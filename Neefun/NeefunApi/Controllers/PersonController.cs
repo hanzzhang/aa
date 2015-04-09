@@ -113,7 +113,7 @@ namespace NeefunApi.Controllers
 
             // TODO: Save the patched entity.
             var person = new Person();
-            await Mongo.CreatePersonAsync(p);
+            await Mongo.CreatePersonAsync(person);
 
             return Updated(person);
         }
