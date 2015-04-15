@@ -34,7 +34,7 @@ namespace NeefunWeb
                         validateInterval: TimeSpan.FromMinutes(30),
                         regenerateIdentity: (manager, user) => user.GenerateUserIdentityAsync(manager))
                 }
-            });            
+            });
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Enables the application to temporarily store user information when they are verifying the second factor in the two-factor authentication process.
@@ -58,11 +58,12 @@ namespace NeefunWeb
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "766864600593-63tl15u32u8vb7a9q6g6tkfhefuio6fr.apps.googleusercontent.com",
+                ClientSecret = "DZiFx5NNpQHP2coBuV2bvWaN"
+            });
         }
     }
 }
