@@ -11,6 +11,9 @@
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
+    <Certificates>
+      <Certificate name="Neefun" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
   </WebRole>
   <WebRole name="NeefunApi" vmsize="Small">
     <Sites>
