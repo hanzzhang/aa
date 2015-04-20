@@ -324,6 +324,7 @@
     <Content Include="Views\Swim\GroupLesson.cshtml" />
     <Content Include="Views\SummerCamp\Index.cshtml" />
     <Content Include="Views\SummerCamp\CanoeCamp.cshtml" />
+    <Content Include="Views\SummerCamp\GiftedExamCamp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
