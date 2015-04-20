@@ -14,16 +14,9 @@ namespace NeefunWeb.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Neefun";
-
-            return View();
-        }
-
         public ActionResult Contact()
         {
-            ViewBag.Message = "请联系：";
+            ViewBag.Message = "Contact";
 
             return View();
         }
