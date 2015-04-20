@@ -254,6 +254,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Img\Gifted_Class_1.jpg" />
     <Content Include="Img\Youth_Lessons1.jpg" />
     <Content Include="PersonClient.ttinclude" />
     <Content Include="File\Canoe\Canoe_Camp_Registration.pdf" />
