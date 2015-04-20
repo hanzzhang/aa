@@ -7,8 +7,4 @@
       <Certificate name="Neefun" thumbprint="CD9FD1D37F6CA55A3B2ED39A9D7F96534A83923C" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
-  <Role name="NeefunApi">
-    <Instances count="1" />
-    <ConfigurationSettings />
-  </Role>
 </ServiceConfiguration>

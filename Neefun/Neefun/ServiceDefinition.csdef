@@ -15,16 +15,4 @@
       <Certificate name="Neefun" storeLocation="LocalMachine" storeName="My" />
     </Certificates>
   </WebRole>
-  <WebRole name="NeefunApi" vmsize="Small">
-    <Sites>
-      <Site name="Web">
-        <Bindings>
-          <Binding name="Endpoint1" endpointName="Endpoint1" />
-        </Bindings>
-      </Site>
-    </Sites>
-    <Endpoints>
-      <InputEndpoint name="Endpoint1" protocol="http" port="8080" />
-    </Endpoints>
-  </WebRole>
 </ServiceDefinition>
