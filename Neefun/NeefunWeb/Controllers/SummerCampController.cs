@@ -13,5 +13,13 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
+        public ActionResult CanoeCamp()
+        {
+            return View();
+        }
+        public ActionResult GiftedExamCamp()
+        {
+            return View();
+        }
     }
 }

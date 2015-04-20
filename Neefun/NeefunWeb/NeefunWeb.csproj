@@ -255,8 +255,12 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="PersonClient.ttinclude" />
-    <Content Include="File\ConcussionInfoSheet.pdf" />
-    <Content Include="File\SwimRegistation.pdf" />
+    <Content Include="File\Canoe\Canoe_Camp_Registration.pdf" />
+    <Content Include="File\Canoe\Cascade_Medical_Release_2014.pdf" />
+    <Content Include="File\Canoe\Cascade_Parent_Permission_2014.pdf" />
+    <Content Include="File\Canoe\Cascade_Waiver_2014.pdf" />
+    <Content Include="File\Swim\ConcussionInfoSheet.pdf" />
+    <Content Include="File\Swim\SwimRegistation.pdf" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Icon.png" />
     <Content Include="PersonClient.tt">
@@ -318,10 +322,11 @@
     <Content Include="Views\Swim\SpringTeam.cshtml" />
     <Content Include="Views\Swim\SummerTeam.cshtml" />
     <Content Include="Views\Swim\GroupLesson.cshtml" />
+    <Content Include="Views\SummerCamp\Index.cshtml" />
+    <Content Include="Views\SummerCamp\CanoeCamp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\SummerCamp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
