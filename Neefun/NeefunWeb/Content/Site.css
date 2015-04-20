@@ -32,3 +32,12 @@ table {
         border: 1px solid #FF0000;
         text-align: center;
     }
+
+.rightImg {
+    float: right;
+}
+
+.leftText {
+    float: left;
+}
+
