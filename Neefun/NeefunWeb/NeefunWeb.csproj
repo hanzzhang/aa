@@ -254,15 +254,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Img\Gifted_Class_1.jpg" />
-    <Content Include="Img\Youth_Lessons1.jpg" />
     <Content Include="PersonClient.ttinclude" />
-    <Content Include="File\Canoe\Canoe_Camp_Registration.pdf" />
-    <Content Include="File\Canoe\Cascade_Medical_Release_2014.pdf" />
-    <Content Include="File\Canoe\Cascade_Parent_Permission_2014.pdf" />
-    <Content Include="File\Canoe\Cascade_Waiver_2014.pdf" />
-    <Content Include="File\Swim\ConcussionInfoSheet.pdf" />
-    <Content Include="File\Swim\SwimRegistation.pdf" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Icon.png" />
     <Content Include="PersonClient.tt">
