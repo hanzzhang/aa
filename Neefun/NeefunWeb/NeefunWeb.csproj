@@ -312,7 +312,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Swim\Index.cshtml" />
-    <Content Include="Views\Swim\SpringTeam.cshtml" />
     <Content Include="Views\Swim\SummerTeam.cshtml" />
     <Content Include="Views\Swim\GroupLesson.cshtml" />
     <Content Include="Views\SummerCamp\Index.cshtml" />
@@ -320,6 +319,7 @@
     <Content Include="Views\SummerCamp\GiftedExamCamp.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Drone\Index.cshtml" />
+    <Content Include="Views\Swim\SwimResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

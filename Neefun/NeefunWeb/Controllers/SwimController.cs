@@ -25,5 +25,9 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
+        public ActionResult SwimResult()
+        {
+            return View();
+        }
     }
 }
