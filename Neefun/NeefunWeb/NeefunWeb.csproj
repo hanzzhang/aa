@@ -320,6 +320,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Drone\Index.cshtml" />
     <Content Include="Views\Swim\SwimResult.cshtml" />
+    <Content Include="Views\Swim\SummerGroupLesson.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

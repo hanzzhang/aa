@@ -17,6 +17,10 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
+        public ActionResult SummerGroupLesson()
+        {
+            return View();
+        }
         public ActionResult SpringTeam()
         {
             return View();
