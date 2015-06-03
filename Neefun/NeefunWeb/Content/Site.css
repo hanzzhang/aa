@@ -25,11 +25,11 @@ textarea {
 
 table {
     border-collapse: collapse;
-    border: 1px solid #FF0000;
+    border: 1px solid #000000;
 }
 
     table td {
-        border: 1px solid #FF0000;
+        border: 1px solid #000000;
         text-align: center;
     }
 
