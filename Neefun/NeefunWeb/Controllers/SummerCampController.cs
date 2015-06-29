@@ -17,7 +17,7 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
-        public ActionResult GiftedExamCamp()
+        public ActionResult SwimCamp()
         {
             return View();
         }
