@@ -316,7 +316,7 @@
     <Content Include="Views\Swim\GroupLesson.cshtml" />
     <Content Include="Views\SummerCamp\Index.cshtml" />
     <Content Include="Views\SummerCamp\CanoeCamp.cshtml" />
-    <Content Include="Views\SummerCamp\GiftedExamCamp.cshtml" />
+    <Content Include="Views\SummerCamp\SwimCamp.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Drone\Index.cshtml" />
     <Content Include="Views\Swim\SwimResult.cshtml" />
