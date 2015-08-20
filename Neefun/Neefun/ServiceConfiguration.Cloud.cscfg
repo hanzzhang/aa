@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="Neefun" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Neefun" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
   <Role name="NeefunWeb">
     <Instances count="1" />
-    <ConfigurationSettings />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=neefunstore;AccountKey=B6AWO5yGAMi9usw2pMNQGrO9EhTGtUHpL8dPa6LLfu9x3lfSGbreYSv1GiPQ2GATwGJWreGK+4P/puT02YFCng==" />
+    </ConfigurationSettings>
     <Certificates>
       <Certificate name="Neefun" thumbprint="CD9FD1D37F6CA55A3B2ED39A9D7F96534A83923C" thumbprintAlgorithm="sha1" />
     </Certificates>
