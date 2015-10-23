@@ -33,7 +33,7 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
-        public ActionResult Issaquah()
+        public ActionResult Is()
         {
             return View();
         }
