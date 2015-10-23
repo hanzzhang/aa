@@ -29,6 +29,14 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
+        public ActionResult mi()
+        {
+            return View();
+        }
+        public ActionResult Issaquah()
+        {
+            return View();
+        }
         public ActionResult SwimResult()
         {
             return View();

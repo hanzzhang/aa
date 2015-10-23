@@ -1,32 +1,30 @@
 ﻿@{
-    ViewBag.Title = "Neefun游泳";
+    ViewBag.Title = "Neefun Swim";
 }
 
 <div>
-    <h1>游泳项目(Neefun Swim)</h1>
+    <h1>Neefun Swim</h1>
 </div>
 
 <div>
-    <h3>开始和结束日期(Beginning and End Date)</h3>
-    <ul>Saturday Oct 10, 2015 - Saturday August 27, 2016</ul>
-
-    <h3>游泳时间(Swimming Time)</h3>
-    <ul>Every Saturday 5pm-7pm (No class on Thinksgiving weekend 11/28/15)</ul>
-</div>
-
-<div>
-    <h3>游泳池地址 (Swim Pool Location)</h3>
+    <h3>@Html.ActionLink("Swim at Issaquah", "issaquah", "Swim")</h3>
     <ul>
-        <span>Issaquah Julius Boehm Pool, 50 SE Clark St, Issaquah, WA 98027 (425) 837-3350 </span>
-        <span>(indoor pool) </span>
+        <li><b>Time:</b> Every Saturday 5pm-7pm</li>
+        <li><b>Location:</b> Issaquah Julius Boehm Pool, 50 SE Clark St, Issaquah, WA 98027 (425) 837-3350 </li>
+    </ul>
+</div>
+<div>
+    <h3>@Html.ActionLink("Swim at Mercer Island", "mi", "Swim")</h3>
+    <ul>
+        <li><b>Time:</b> Monday and Thursday 6:30-7:30pm </li>
+        <li><b>Location:</b> Mercer Island Country Club, 8700 SE 71st St, Mercer Island, WA 98040</li>
     </ul>
 </div>
 
 <h3>
-    Neefun 游泳队简介 (About Neefun Swim Team)：
-</h3><br/>
+    Neefun Swim 简介 (Introduction to Neefun Swim)：
+</h3>
 <div>
-    <h4>Neefun Swimteam 游泳队</h4>
     <p>
         Neefun 游泳队是由一些热心于儿童教育的在校学生的家长发起组织。
         游泳队建立的宗旨不在于争夺名次，而是通过正确的游泳姿势，适当提高体能，

@@ -321,6 +321,8 @@
     <Content Include="Views\Drone\Index.cshtml" />
     <Content Include="Views\Swim\SwimResult.cshtml" />
     <Content Include="Views\Swim\SummerGroupLesson.cshtml" />
+    <Content Include="Views\Swim\mi.cshtml" />
+    <Content Include="Views\Swim\Issaquah.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
