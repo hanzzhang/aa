@@ -12,10 +12,8 @@
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Certificates>
-      <Certificate name="Neefun" storeLocation="LocalMachine" storeName="My" />
     </Certificates>
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
   </WebRole>
 </ServiceDefinition>
