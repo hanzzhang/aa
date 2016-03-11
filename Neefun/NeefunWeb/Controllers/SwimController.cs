@@ -37,6 +37,10 @@ namespace NeefunWeb.Controllers
         {
             return View();
         }
+        public ActionResult Somerset()
+        {
+            return View();
+        }
         public ActionResult SwimResult()
         {
             return View();

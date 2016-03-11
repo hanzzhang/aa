@@ -323,6 +323,7 @@
     <Content Include="Views\Swim\SummerGroupLesson.cshtml" />
     <Content Include="Views\Swim\mi.cshtml" />
     <Content Include="Views\Swim\Is.cshtml" />
+    <Content Include="Views\Swim\Somerset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
