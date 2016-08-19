@@ -30,17 +30,17 @@
       </DiagnosticMonitorConfiguration>
       <SinksConfig>
         <Sink name="applicationInsights">
-          <ApplicationInsights />
+          <ApplicationInsights>561b7766-86e3-4102-894a-fd42cfa01698</ApplicationInsights>
           <Channels>
             <Channel logLevel="Error" name="errors" />
           </Channels>
         </Sink>
       </SinksConfig>
     </WadCfg>
-    <StorageAccount />
+    <StorageAccount>devstoreaccount1</StorageAccount>
   </PublicConfig>
-  <PrivateConfig>
-    <StorageAccount name="" key="" endpoint="" />
+  <PrivateConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+    <StorageAccount name="devstoreaccount1" key="Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==" />
   </PrivateConfig>
   <IsEnabled>true</IsEnabled>
 </DiagnosticsConfiguration>

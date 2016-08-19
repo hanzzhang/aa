@@ -3,6 +3,8 @@
   <Role name="NeefunWeb">
     <Instances count="1" />
     <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="561b7766-86e3-4102-894a-fd42cfa01698" />
     </ConfigurationSettings>
     <Certificates>
     </Certificates>

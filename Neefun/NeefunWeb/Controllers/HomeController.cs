@@ -10,7 +10,8 @@ namespace NeefunWeb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Swim");
+            //return View();
         }
 
         public ActionResult Contact()

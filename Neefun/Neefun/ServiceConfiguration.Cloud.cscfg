@@ -3,6 +3,8 @@
   <Role name="NeefunWeb">
     <Instances count="1" />
     <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=neefunstore;AccountKey=B6AWO5yGAMi9usw2pMNQGrO9EhTGtUHpL8dPa6LLfu9x3lfSGbreYSv1GiPQ2GATwGJWreGK+4P/puT02YFCng==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="561b7766-86e3-4102-894a-fd42cfa01698" />
     </ConfigurationSettings>
     <Certificates>
     </Certificates>
