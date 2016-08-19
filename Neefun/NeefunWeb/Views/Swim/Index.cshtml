@@ -6,85 +6,87 @@
     <h1>Neefun Swim</h1>
 </div>
 
+<h3>Swim Schedule (游泳时间地点)</h3>
 <div>
-    <h3>Swim Schedule (游泳时间地点)</h3>
     <h4>9/7/2016 - 9/5/2017</h4>
+
     <ul>
-        <li>Mon, Wed, Fri: 6:30-7:30 pm @Html.ActionLink(" Mercer Island Country Club, 8700 SE 71st St, Mercer Island, WA 98040", "somerset", "Swim")</li>
-        <li>Sat: 5:00-7:00 pm @Html.ActionLink("Issaquah Julius Boehm Pool, 50 SE Clark St, Issaquah, WA 98027", "Is", "Swim")</li>
+        @Html.ActionLink("Mercer Island", "mi", "swim")
+        <ul>
+            <li>Mon, Wed, Fri 6:30-7:30pm (2016/9/7 - 2017/6/14)</li>
+            <li>Mercer island country club, 8700 se 71st st, mercer island, wa 98040</li>
+        </ul>
     </ul>
 
+    <ul>
+        @Html.ActionLink("Issaquah", "is", "swim")
+        <ul>
+            <li>Sat 5:00-7:00 pm (9/7/2016 - 9/5/2017)</li>
+            <li>Issaquah julius boehm pool, 50 se clark st, issaquah, wa 98027 (425) 837-3350 </li>
+        </ul>
+    </ul>
 
     <h4>6/27/16-9/5/16</h4>
-    <ul>        
-        <li>Mon, Wed: 7:00-9:00 pm @Html.ActionLink(" Somerset Recreation Club, 4445 Somerset Blvd SE, Bellevue, WA 98006", "somerset", "Swim")</li>
-        <li>Sat: 5:00-7:00 pm @Html.ActionLink("Issaquah Julius Boehm Pool, 50 SE Clark St, Issaquah, WA 98027", "Is", "Swim")</li>
-    </ul>
-
-    <h3>Prices (收费)</h3>
     <ul>
-        <h4>游泳队 Swim Team </h4>
+        @Html.ActionLink("Somerset", "somerset", "swim")
         <ul>
-            <li>
-                $2180 for the combined Issaquah & Mercer Island Program
-            </li>
-
-            <li>
-                $1380 for the whole season at Mercer Island
-            </li>
-            <li>
-                $1380 for the whole season at Issaquah
-            </li>
-
-            <li>
-                $380 for 20 hours
-            </li>
-
-            <li>
-                $20 for 1 hour
-            </li>
-        </ul>
-
-        <h4>游泳小班 Small Group Lesson </h4>
-        <ul>
-            <li>
-                $350 for 10 hours
-            </li>
-        </ul>
-
-        <h4>Private Lesson </h4>
-        <ul>
-            <li>
-                $45 half hour
-            </li>
-            <li>
-                $65 one hour
-            </li>
+            <li>Mon, Wed 7:00-9:00 pm (6/27/16 - 8/31/16)</li>
+            <li>Somerset recreation club, 4445 somerset blvd se, bellevue, wa 98006</li>
         </ul>
     </ul>
+
+    <ul>
+        @Html.ActionLink("Issaquah", "is", "swim")
+        <ul>
+            <li>Sat 5:00-7:00 pm (6/27/2016 - 9/5/2016)</li>
+            <li>Issaquah julius boehm pool, 50 se clark st, issaquah, wa 98027 (425) 837-3350 </li>
+        </ul>
+    </ul>
+
 </div>
 
-<div>
-    <h3>@Html.ActionLink("swim at issaquah", "is", "swim")</h3>
+<h3>Prices (收费)</h3>
+<ul>
+    游泳队 Swim Team
     <ul>
-        <li><b>time:</b> every Saturday 5pm-7pm</li>
-        <li><b>location:</b> issaquah julius boehm pool, 50 se clark st, issaquah, wa 98027 (425) 837-3350 </li>
+        <li>
+            $2180 for the combined Issaquah & Mercer Island Program
+        </li>
+
+        <li>
+            $1380 for the whole season at Mercer Island
+        </li>
+        <li>
+            $1380 for the whole season at Issaquah
+        </li>
+
+        <li>
+            $380 for 20 hours
+        </li>
+
+        <li>
+            $20 for 1 hour
+        </li>
     </ul>
-</div>
-<div>
-    <h3>@Html.ActionLink("swim at mercer island", "mi", "swim")</h3>
+
+    游泳小班 Small Group Lesson
     <ul>
-        <li><b>time:</b> Monday, Wednesday, Friday 6:30-7:30pm </li>
-        <li><b>location:</b> mercer island country club, 8700 se 71st st, mercer island, wa 98040</li>
+        <li>
+            $350 for 10 hours
+        </li>
     </ul>
-</div>
-<div>
-    <h3>@Html.ActionLink("swim at somerset", "somerset", "swim")</h3>
+
+    Private Lesson
     <ul>
-        <li>7:00-9:00pm monday and wednesday (6/27/16 - 9/5/16)</li>
-        <li><b>location:</b> somerset recreation club, 4445 somerset blvd se, bellevue, wa 98006</li>
+        <li>
+            $45 half hour
+        </li>
+        <li>
+            $65 one hour
+        </li>
     </ul>
-</div>
+</ul>
+
 
 <h3>
     Neefun Swim 简介 (Introduction to Neefun Swim)：
@@ -104,27 +106,27 @@
     </p>
 
     @*<h4>主教练Joey Xiong (Head Coach)</h4>
-    <p>
-       主教练Joey Xiong前中国四川省游泳队，海军游泳集训队队员。师从中国第一个亚洲男子蛙王金浦。在海军队，与世界短泳冠军宁泽涛同项目训练。美国游泳协会教练员，美国幼儿教育专业。
-    </p>
-    <p>
-        Neefun swim head coach Joey Xiong is experienced in teaching children
-        at different levels and ages. She majors in children's education and
-        loves to work with children. coach Joey is US Swimming certified and a
-        former member of Sichuan Professional Swim Team in China.
-    </p>
+        <p>
+           主教练Joey Xiong前中国四川省游泳队，海军游泳集训队队员。师从中国第一个亚洲男子蛙王金浦。在海军队，与世界短泳冠军宁泽涛同项目训练。美国游泳协会教练员，美国幼儿教育专业。
+        </p>
+        <p>
+            Neefun swim head coach Joey Xiong is experienced in teaching children
+            at different levels and ages. She majors in children's education and
+            loves to work with children. coach Joey is US Swimming certified and a
+            former member of Sichuan Professional Swim Team in China.
+        </p>
 
-    <h4>Coach Elsa</h4>
-    <p>
-        Elsa在中国学会游泳,后来高中去了澳大利亚,在澳大利亚又学了一段时间游泳,转学去了加拿大，现在在美国。 她有丰富的教小孩的经验，中英文都非常流利。 
-    </p>
-    <p>
-        Elsa learned swimming in China and continued learning swimming in Australia and Canada 
-        before moved to the US. She has extensive experience teaching children and is fluent in both English and Chinese.
-    </p>*@
+        <h4>Coach Elsa</h4>
+        <p>
+            Elsa在中国学会游泳,后来高中去了澳大利亚,在澳大利亚又学了一段时间游泳,转学去了加拿大，现在在美国。 她有丰富的教小孩的经验，中英文都非常流利。
+        </p>
+        <p>
+            Elsa learned swimming in China and continued learning swimming in Australia and Canada
+            before moved to the US. She has extensive experience teaching children and is fluent in both English and Chinese.
+        </p>*@
 </div>
 
 @*<div>
-    <h3>@Html.ActionLink("游泳成绩(Swim Result)", "SwimResult", "Swim")</h3>
-</div>*@
+        <h3>@Html.ActionLink("游泳成绩(Swim Result)", "SwimResult", "Swim")</h3>
+    </div>*@
 
