@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,49 +25,48 @@
                     <li>@Html.ActionLink("Mercer Island", "mi", "Swim")</li>
                     <li>@Html.ActionLink("Issaquah", "Is", "Swim")</li>
                     <li>@Html.ActionLink("Somerset", "Somerset", "Swim")</li>
-                    @*<li>@Html.ActionLink("夏令营", "Index", "SummerCamp")</li>
+                    <li>@Html.ActionLink("夏令营", "Index", "SummerCamp")</li>
                     <li>@Html.ActionLink("无人机摄影", "Index", "Drone")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                @*@Html.Partial("_LoginPartial")*@
             </div>
         </div>
-    </div>
+    </div>*@
     <div class="container body-content">
         @RenderBody()
-        <hr />
+        @*<hr />
+    <div>
         <div>
-            <div>
-                <h3>申请办法(Application)</h3>
+            <h3>申请办法(Application)</h3>
 
-                <p>请下载下面的表格， 打印填写. (please download and fill the forms below. )</p>
-                <ul>
-                    <li><a href="http://neefun.blob.core.windows.net/forms/SwimRegistration.pdf">Registration forms</a></li>
-                </ul>
-                <p>
-                    You may either email the copy of the signed forms to <a href="mailto:neefun@hotmail.com">neefun@hotmail.com</a> or bring the forms to the swimming class. You may bring cash or check to the swimming class or contact us for other ways of the payment. Please make check payable to Neefun.
-                </p>
-            </div>
-            <div>
-                <h3>
-                    联系方式 (Contact)：
-                </h3>
-                <ul>
-                    <li>
-                        <strong>Email:</strong> <a href="mailto:neefun@hotmail.com">neefun@hotmail.com</a>
-                    </li>
-                    <li>
-                        <strong>Johnny: </strong>425-208-1837
-                    </li>
-                    <li>
-                        <strong>Enzo: </strong>414-688-1951
-                        @*<strong>Joey </strong>206-466-9580
-                        <strong>Hanz </strong>425-210-9897*@
-                    </li>
-                </ul>
-            </div>
-
+            <p>请下载下面的表格， 打印填写. (please download and fill the forms below. )</p>
+            <ul>
+                <li><a href="http://neefun.blob.core.windows.net/forms/SwimRegistration.pdf">Registration forms</a></li>
+            </ul>
+            <p>
+                You may either email the copy of the signed forms to <a href="mailto:neefun@hotmail.com">neefun@hotmail.com</a> or bring the forms to the swimming class. You may bring cash or check to the swimming class or contact us for other ways of the payment. Please make check payable to Neefun.
+            </p>
         </div>
+        <div>
+            <h3>
+                联系方式 (Contact)：
+            </h3>
+            <ul>
+                <li>
+                    <strong>Email:</strong> <a href="mailto:neefun@hotmail.com">neefun@hotmail.com</a>
+                </li>
+                <li>
+                    <strong>Johnny: </strong>425-208-1837
+                </li>
+                <li>
+                    <strong>Enzo: </strong>414-688-1951
+                    <strong>Joey </strong>206-466-9580
+                    <strong>Hanz </strong>425-210-9897
+                </li>
+            </ul>
+        </div>
+
+    </div>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")

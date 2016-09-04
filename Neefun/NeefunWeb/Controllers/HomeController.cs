@@ -10,15 +10,15 @@ namespace NeefunWeb.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "Swim");
-            //return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Contact";
-
+            //sreturn RedirectToAction("Index", "Swim");
             return View();
         }
+
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Contact";
+
+        //    return View();
+        //}
     }
 }
